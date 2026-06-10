@@ -6,6 +6,12 @@ const graphRoutes = require('./routes/graphRoutes');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+console.log('--- Startup Config ---');
+console.log('Detected PORT:', process.env.PORT);
+console.log('Using PORT:', PORT);
+console.log('NODE_ENV:', process.env.NODE_ENV);
+console.log('----------------------');
+
 // Middleware
 app.use(cors());
 app.use(express.json());
