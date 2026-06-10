@@ -4,7 +4,7 @@ const cors = require('cors');
 const graphRoutes = require('./routes/graphRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 console.log('--- Startup Config ---');
 console.log('Detected PORT:', process.env.PORT);
